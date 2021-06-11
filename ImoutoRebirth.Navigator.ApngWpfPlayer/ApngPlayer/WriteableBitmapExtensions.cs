@@ -162,16 +162,7 @@ namespace ImoutoRebirth.Navigator.ApngWpfPlayer.ApngPlayer
                                     }
                                 }
 
-                                if (blendMode == BlendMode.None)
-                                {
-                                    destPixels[idx] = sourcePixel;
-                                }
-
-                                if (blendMode == BlendMode.Alpha)
-                                {
-                                    if (sourcePixel != 0)
-                                        destPixels[idx] = sourcePixel;
-                                }
+                                destPixels[idx] = sourcePixel;
                             }
 
                             x++;
